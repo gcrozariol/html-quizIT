@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  background-color: #9DB2B1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'BenchNine';
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #A31E39;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.login {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
+}
+.login input {
+  font-family: 'Roboto', sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.swift_test_btn {
+  background-color: #A31E39;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 158px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.swift_test_btn:before,
+.swift_test_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.swift_test_btn:before {
+  border-color: #A31E39;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.swift_test_btn:after {
+  border-bottom-width: 2px;
+  border-color: #A31E39;
+  bottom: -5px;
+  right: 0px;
+}
+
+.swift_test_btn:hover,
+.swift_test_btn.hover {
+  background-color: #A31E39;
+}
+
+.swift_test_btn:hover:before,
+.swift_test_btn.hover:before,
+.swift_test_btn:hover:after,
+.swift_test_btn.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.java_test_btn {
+  background-color: #A31E39;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 162px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.java_test_btn:before,
+.java_test_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.java_test_btn:before {
+  border-color: #A31E39;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.java_test_btn:after {
+  border-bottom-width: 2px;
+  border-color: #A31E39;
+  bottom: -5px;
+  right: 0px;
+}
+
+.java_test_btn:hover,
+.java_test_btn.hover {
+  background-color: #A31E39;
+}
+
+.java_test_btn:hover:before,
+.java_test_btn.hover:before,
+.java_test_btn:hover:after,
+.java_test_btn.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.done_btn {
+  background-color: #A31E39;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 159px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.done_btn:before,
+.done_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.done_btn:before {
+  border-color: #A31E39;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.done_btn:after {
+  border-bottom-width: 2px;
+  border-color: #A31E39;
+  bottom: -5px;
+  right: 0px;
+}
+
+.done_btn:hover,
+.done_btn.hover {
+  background-color: #A31E39;
+}
+
+.done_btn:hover:before,
+.done_btn.hover:before,
+.done_btn:hover:after,
+.done_btn.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.cancel_btn {
+  background-color: #A31E39;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 153px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cancel_btn:before,
+.cancel_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.cancel_btn:before {
+  border-color: #A31E39;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.cancel_btn:after {
+  border-bottom-width: 2px;
+  border-color: #A31E39;
+  bottom: -5px;
+  right: 0px;
+}
+
+.cancel_btn:hover,
+.cancel_btn.hover {
+  background-color: #A31E39;
+}
+
+.cancel_btn:hover:before,
+.cancel_btn.hover:before,
+.cancel_btn:hover:after,
+.cancel_btn.hover:after {
+  height: 100%;
+  width: 100%;
+}
