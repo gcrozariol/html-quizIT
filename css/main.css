@@ -22,23 +22,46 @@ p {
   color: black;
 }
 
-.pagination a {
-  text-align: center;
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  transition: background-color .3s;
+progress {
+  display:inline-block;
+  width:190px;
+  height:20px;
+  padding:15px 0 0 0;
+  margin:0;
+  background:none;
+  border: 0;
+  border-radius: 15px;
+  text-align: left;
+  position:relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
 
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
+progress::-webkit-progress-bar {
+  height:15px;
+  width:150px;
+  margin:0 auto;
+  background-color: #CCC;
+  border-radius: 15px;
+  box-shadow:0px 0px 6px #777 inset;
 }
 
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
+progress::-webkit-progress-value {
+  display:inline-block;
+  float:left;
+  height:15px;
+  margin:0px -10px 0 0;
+  background: #A31E39;
+  border-radius: 15px;
+  box-shadow:0px 0px 6px #777 inset;
+}
+
+progress:after {
+  margin:-26px 0 0 -7px;
+  padding:0;
+  display:inline-block;
+  float:left;
+  content: attr(value) '%';
 }
 
 .login {

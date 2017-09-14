@@ -6,22 +6,11 @@
 	<title>This is a Swift test!</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body onload="showPages('1')">
 
 	<div class="main">
 
-		<div class="pagination">
-			<a href="#" onclick="showPages('1')">1</a>
-			<a href="#" onclick="showPages('2')">2</a>
-			<a href="#" onclick="showPages('3')">3</a>
-			<a href="#" onclick="showPages('4')">4</a>
-			<a href="#" onclick="showPages('5')">5</a>
-		 	<a href="#" onclick="showPages('6')">6</a>
-			<a href="#" onclick="showPages('7')">7</a>
-			<a href="#" onclick="showPages('8')">8</a>
-			<a href="#" onclick="showPages('9')">9</a>
-			<a href="#" onclick="showPages('10')">10</a>
-		</div>
+		<progress id="progressBar" max="100" value="50"></progress>
 
 		<h1>Swift Test</h1>
 
