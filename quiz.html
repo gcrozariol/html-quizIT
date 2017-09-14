@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quiz">
+    <meta name="keywords" content="Quiz,Swift,Java">
+    <meta name="author" content="Alfredo, Guilherme e Juliana">
+		<title>Test Your Knowledge!</title>
+
+		<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+	</head>
+
+  <style type="text/css" media="screen">
+    body {
+      font-size: 20px;
+      font-family: sans-serif;
+      color: #333;
+    }
+
+    .question{
+      font-weight: 600;
+    }
+
+    .answers {
+        margin-bottom: 20px;
+    }
+
+    #submit {
+      font-family: sans-serif;
+      font-size: 20px;
+      background-color: #297;
+      color: #fff;
+      border: 0px;
+      border-radius: 3px;
+      padding: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    #submit:hover{
+      background-color: #3a8;
+    }
+
+    .slide{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .active-slide{
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .quiz-container {
+      position: relative;
+      height: 200px;
+      margin-top: 40px;
+    }
+  </style>
+
+	<body>
+
+    <div class="quiz-container">
+      <div id="quiz"></div>
+    </div>
+
+    <button id="previous">Previous</button>
+    <button id="next">Next</button>
+    <button id="submit">Submit Quiz</button>
+
+    <div id="results"></div>
+
+
+    <script src="js/quiz.js"></script>
+    <script src="js/quiz_pagination.js"></script>
+  </body>
+</html>
