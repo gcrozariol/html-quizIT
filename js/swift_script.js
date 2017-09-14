@@ -1,3 +1,20 @@
+// Pagination
+
+function showPages(id){
+
+    var totalNumberOfPages = 10;
+
+    for(var i=1; i<=totalNumberOfPages; i++){
+        if (document.getElementById('question'+i)) {
+            document.getElementById('question'+i).style.display='none';
+        }
+    }
+    
+    if (document.getElementById('question'+id)) {
+        document.getElementById('question'+id).style.display='block';
+    }
+};
+
 // Swift Q&A
 
 sq1.innerHTML = 'Question 1';
