@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Quiz">
-		<meta name="keywords" content="Quiz,Swift,Java">
-		<meta name="author" content="Alfredo, Guilherme e Juliana">
-		<title>This is a Swift test!</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>This is a Swift test!</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="showPages('1')">
 
-		<link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="main">
-			<h1>Swift Test</h1>
+	<div class="main">
 
+		<progress id="progressBar" max="100" value="50"></progress>
+
+		<h1>Swift Test</h1>
+
+		<div id="question1">
 			<p id="sq1"></p><br>
 			<p id="sq1a1"></p>
 			<p id="sq1a2"></p>
 			<p id="sq1a3"></p>
 			<p id="sq1a4"></p><br>
+		</div>
 
+		<div id="question2">
 			<p id="sq2"></p><br>
 			<p id="sq2a1"></p>
 			<p id="sq2a2"></p>
 			<p id="sq2a3"></p>
 			<p id="sq2a4"></p><br>
+		</div>
 
+		<div id="question3">
 			<p id="sq3"></p><br>
 			<p id="sq3a1"></p>
 			<p id="sq3a2"></p>
 			<p id="sq3a3"></p>
 			<p id="sq3a4"></p><br>
+		</div>
 
+		<div id="question4">
 			<p id="sq4"></p><br>
 			<p id="sq4a1"></p>
 			<p id="sq4a2"></p>
 			<p id="sq4a3"></p>
 			<p id="sq4a4"></p><br>
+		</div>
 
+		<div id="question5">
 			<p id="sq5"></p><br>
 			<p id="sq5a1"></p>
 			<p id="sq5a2"></p>
 			<p id="sq5a3"></p>
 			<p id="sq5a4"></p><br>
+		</div>
 
+		<div id="question6">
 			<p id="sq6"></p><br>
 			<p id="sq6a1"></p>
 			<p id="sq6a2"></p>
 			<p id="sq6a3"></p>
 			<p id="sq6a4"></p><br>
+		</div>
 
+		<div id="question7">
 			<p id="sq7"></p><br>
 			<p id="sq7a1"></p>
 			<p id="sq7a2"></p>
 			<p id="sq7a3"></p>
 			<p id="sq7a4"></p><br>
+		</div>
 
+		<div id="question8">
 			<p id="sq8"></p><br>
 			<p id="sq8a1"></p>
 			<p id="sq8a2"></p>
 			<p id="sq8a3"></p>
 			<p id="sq8a4"></p><br>
+		</div>
 
+		<div id="question9">
 			<p id="sq9"></p><br>
 			<p id="sq9a1"></p>
 			<p id="sq9a2"></p>
 			<p id="sq9a3"></p>
 			<p id="sq9a4"></p><br>
+		</div>
 
+		<div id="question10">
 			<p id="sq10"></p><br>
 			<p id="sq10a1"></p>
 			<p id="sq10a2"></p>
 			<p id="sq10a3"></p>
 			<p id="sq10a4"></p><br>
-
-			<form action="index.html">
-				<button class="done_btn" name="done">Done</button><br><br>
-			</form>
-			<form action="index.html">
-				<button class="cancel_btn" name="cancel">Cancel</button>
-			</form>
 		</div>
-	
-		<script src="/js/swift_script.js"></script>
-	</body>
+
+		<form action="index.html">
+			<button class="done_btn" name="done">Done</button><br><br>
+		</form>
+		<form action="index.html">
+			<button class="cancel_btn" name="cancel">Cancel</button>
+		</form>
+	</div>
+	<script src="js/swift_script.js"></script>
+</body>
 </html>

@@ -22,20 +22,47 @@ p {
   color: black;
 }
 
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
+progress {
+  display:inline-block;
+  width:190px;
+  height:20px;
+  padding:15px 0 0 0;
+  margin:0;
+  background:none;
+  border: 0;
+  border-radius: 15px;
+  text-align: left;
+  position:relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
 
-.pagination a.active {
-    background-color: #4CAF50;
-    color: white;
+progress::-webkit-progress-bar {
+  height:15px;
+  width:150px;
+  margin:0 auto;
+  background-color: #CCC;
+  border-radius: 15px;
+  box-shadow:0px 0px 6px #777 inset;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+progress::-webkit-progress-value {
+  display:inline-block;
+  float:left;
+  height:15px;
+  margin:0px -10px 0 0;
+  background: #A31E39;
+  border-radius: 15px;
+  box-shadow:0px 0px 6px #777 inset;
+}
+
+progress:after {
+  margin:-26px 0 0 -7px;
+  padding:0;
+  display:inline-block;
+  float:left;
+  content: attr(value) '%';
+}
 
 .login {
   position: relative;
@@ -56,7 +83,7 @@ p {
   font-size: 14px;
 }
 
-.start_test_btn {
+.swift_test_btn {
   background-color: #A31E39;
   border: none;
   color: #ffffff;
@@ -73,8 +100,8 @@ p {
   font-weight: 700;
 }
 
-.start_test_btn:before,
-.start_test_btn:after {
+.swift_test_btn:before,
+.swift_test_btn:after {
   border-color: transparent;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -86,29 +113,29 @@ p {
   width: 24px;
 }
 
-.start_test_btn:before {
+.swift_test_btn:before {
   border-color: #A31E39;
   border-top-width: 2px;
   left: 0px;
   top: -5px;
 }
 
-.start_test_btn:after {
+.swift_test_btn:after {
   border-bottom-width: 2px;
   border-color: #A31E39;
   bottom: -5px;
   right: 0px;
 }
 
-.start_test_btn:hover,
-.start_test_btn.hover {
+.swift_test_btn:hover,
+.swift_test_btn.hover {
   background-color: #A31E39;
 }
 
-.start_test_btn:hover:before,
-.start_test_btn.hover:before,
-.start_test_btn:hover:after,
-.start_test_btn.hover:after {
+.swift_test_btn:hover:before,
+.swift_test_btn.hover:before,
+.swift_test_btn:hover:after,
+.swift_test_btn.hover:after {
   height: 100%;
   width: 100%;
 }
