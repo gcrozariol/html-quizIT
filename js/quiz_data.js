@@ -143,3 +143,33 @@ addQuestions("How we define our name for constants",
 
 addQuestions("C++ programs must contain", 
 	["start()","system()","main()", "program()"], "c", 2);
+
+// User Data
+
+function saveUserData(){
+	
+    var txtFisrtNameValue = $("#txtFirstName").val();
+    var txtLastNameValue = $("#txtLastName").val();
+    var txtEmailValue = $("#txtEmail").val();
+    var txtPhoneNumberValue = $("#txtPhoneNumber").val();
+    var txtAddressValue = $("#txtAddress").val();
+    
+    localStorage.setItem('firstName', txtFisrtNameValue);
+    localStorage.setItem('lastName', txtLastNameValue);
+    localStorage.setItem('email', txtEmailValue);
+    localStorage.setItem('phoneNumber', txtPhoneNumberValue);
+    localStorage.setItem('address', txtAddressValue);
+
+    console.log("save in localStorage");
+}
+
+function retrieveUserData() {
+	
+	var retrivedFistNameValue = localStorage.getItem('firstName');
+	var retrivedLastNameValue = localStorage.getItem('lastName');
+	var retrivedEmailValue = localStorage.getItem('email');
+	var retrivedPhoneNumberValue = localStorage.getItem('phoneNumber');
+	var retrivedAddressValue = localStorage.getItem('address');
+
+    console.log("retrieve from localStorage");
+}
