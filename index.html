@@ -10,7 +10,7 @@
 
     <form id="form1" class="col align-self-center" action="test.html" method="get" accept-charset="utf-8">
 		<div class="login">
-			<h1>Information</h1>
+			<h1>Fill out your personal information and then choose a test to begin</h1>
 			<input type="text" id="txtFirstName" name="first_name" placeholder="Enter First name" required autofocus>
 			<input type="text" id="txtLastName" name="last_name" placeholder="Enter Last name" required>
 			<input type="email" id="txtEmail" name="email" placeholder="Enter E-mail" required>
@@ -23,12 +23,12 @@
 
 			<div class="form-check form-check-inline">
 			  <label class="form-check-label">
-			    <input class="form-check-input" type="radio" name="test" id="radioSwift" value="swift" required> Swift Test
+			    <input class="form-check-input" type="radio" name="test" id="radioSwift" value="swift" required><h2>Swift Test</h2>
 			  </label>
 			</div>
 			<div class="form-check form-check-inline">
 			  <label class="form-check-label">
-			    <input class="form-check-input" type="radio" name="test" id="radioJava" value="java" required> Java Test
+			    <input class="form-check-input" type="radio" name="test" id="radioJava" value="java" required><h2>Java Test</h2>
 			  </label>
 			</div>
 			<br><br><button class="start_test_btn" onclick="validate()" name="start_test" id="btnStartTest">Start Test</button>
