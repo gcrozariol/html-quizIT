@@ -261,3 +261,7 @@ progress:after {
   height: 100%;
   width: 100%;
 }
+
+.form-check-label h2, .form-check-label input, button, .answers label, .answers input {
+  cursor: pointer;
+}

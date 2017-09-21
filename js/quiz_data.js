@@ -83,7 +83,7 @@ addQuestions("What is correct order of precedence in C",
 	["Addition, Division, Modulus","Addition, Modulus, Division","Multiplication, Substration, Modulus", "Modulus, Multiplication, Substration"], "d", 1);
 
 
-// Question about C++ Programming
+// Question about C# Programming
 addQuestions("All members of class have which access to its members", 
 	["private","public","protected", "depends"], "a", 2);
 

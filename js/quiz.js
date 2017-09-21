@@ -1,8 +1,10 @@
-  const quizContainer = document.getElementById('quiz');
-  const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+const quizTitle = document.getElementById('quiz-title');
+const typeTest = getURLParameter('test');
 
-  var questionSelected = [];
+var questionSelected = [];
 
 function buildQuiz(questions) {
 
@@ -10,6 +12,7 @@ function buildQuiz(questions) {
   questionSelected = questions.slice(0, 10);
 
   const output = [];
+  var cont = 1;
 
   questionSelected.forEach( (value, index) => {
 
@@ -26,13 +29,15 @@ function buildQuiz(questions) {
 
       output.push(
         `<div class="slide">
-          <div class="question"> ${value.question} </div>
+          <div class="question"> `+cont+`. ${value.question} </div>
           <div class="answers"> ${answers.join("")} </div>
         </div>`
       );
+      cont++;
     }
   );
 
+  quizTitle.innerHTML = decodeURIComponent(typeTest) + ' Test';
   quizContainer.innerHTML = output.join('');
 }
 
@@ -57,8 +62,37 @@ function showResults() {
     
   });
 
-  resultsContainer.innerHTML = numCorrect + ' out of ' + questionSelected.length;
+  document.getElementById('quiz-body').remove();
+
+  var msg = 'First name: ' + getURLParameter('first_name');
+  msg += '<br>Last name: ' + getURLParameter('last_name');
+  msg += '<br>Email: ' + getURLParameter('email');
+  msg += '<br>Phone number: ' + getURLParameter('phone_number');
+  msg += '<br>Address: ' + getURLParameter('address');
+  msg += '<br><br>Score ' + numCorrect + '/' + questionSelected.length;
+  if (numCorrect >= 8) {
+    msg += ' - You have successfully passed the test. You are now certified in ' + typeTest + '. Where ' + typeTest + ' is the certification topic you have chosen for this assignment.';
+  } else {
+    msg += ' - Unfortunately you did not pass the test. Please try again later!';
+    msg += '<br><br><button onclick=\'location.href="index.html"\'>Try again</button>';
+  }
+  resultsContainer.innerHTML = msg;
 }
 
-buildQuiz(questionsOpt1);
+function getURLParameter(sParam) {
+  var sPageURL = window.location.search.substring(1);
+  var sURLVariables = sPageURL.split('&');
+  for (var i = 0; i < sURLVariables.length; i++) {
+    var sParameterName = sURLVariables[i].split('=');
+    if (sParameterName[0] == sParam) {
+      return decodeURIComponent(sParameterName[1].replace(/\+/g, '%20'));
+    }
+  }
+}
+
+if(typeTest == 'C') {
+  buildQuiz(questionsOpt1);
+} else {
+  buildQuiz(questionsOpt2);
+}
 submitButton.addEventListener('click', showResults);
