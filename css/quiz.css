@@ -18,20 +18,22 @@ body {
     font-size: 16px;
 }
 
-#submit {
+#submit, button {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #297;
   color: #fff;
   border: 0px;
   border-radius: 3px;
   padding: 3px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin: 20px;
+  width: 100px;
+  background-color: #A31E39;
 }
 
 #submit:hover{
-  background-color: #3a8;
+  background-color: #333;
 }
 
 .slide{

@@ -1,6 +1,8 @@
 const previousButton = document.getElementById("previous");
 const nextButton = document.getElementById("next");
 const slides = document.querySelectorAll(".slide");
+const progressBar = document.getElementById('progress-bar');
+
 let currentSlide = 0;
 
 
@@ -9,6 +11,9 @@ function showSlide(n) {
     slides[currentSlide].classList.remove('active-slide');
     slides[n].classList.add('active-slide');
     currentSlide = n;
+
+    progressBar.style.width = n + "0%";
+    progressBar.innerHTML = n + "0%";
 
     if(currentSlide===0) {
         previousButton.style.display = 'none';

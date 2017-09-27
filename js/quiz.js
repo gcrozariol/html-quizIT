@@ -23,13 +23,15 @@ function buildQuiz(questions) {
           `<label>
             <input type="radio" name="question${index}" value="${choice}"> 
             ${choice}) ${value.choices[choice]}
-          </label><br>`
+          </label>
+          <br>`
         );
       }
 
       output.push(
         `<div class="slide">
-          <div class="question"> `+cont+`. ${value.question} </div>
+          <div class="question"><h1>`+cont+`. ${value.question}<h1/></div>
+          <br>
           <div class="answers"> ${answers.join("")} </div>
         </div>`
       );
@@ -64,18 +66,22 @@ function showResults() {
 
   document.getElementById('quiz-body').remove();
 
-  var msg = 'First name: ' + getURLParameter('first_name');
-  msg += '<br>Last name: ' + getURLParameter('last_name');
-  msg += '<br>Email: ' + getURLParameter('email');
-  msg += '<br>Phone number: ' + getURLParameter('phone_number');
-  msg += '<br>Address: ' + getURLParameter('address');
-  msg += '<br><br>Score ' + numCorrect + '/' + questionSelected.length;
+  var msg = '<div style="width:40%; margin:0% 30%; text-align:left;">';
+      msg += 'First name: <h1>' + getURLParameter('first_name') + '</h1>';
+      msg += 'Last name: <h1>' + getURLParameter('last_name') + '</h1>';
+      msg += 'Email: <h1>' + getURLParameter('email') + '</h1>';
+      msg += 'Phone number: <h1>' + getURLParameter('phone_number') + '</h1>';
+      msg += 'Address: <h1>' + getURLParameter('address') + '</h1>';
+      msg += '<br><h1 style="text-align:center;">Score ' + numCorrect + '/' + questionSelected.length; + '</h1>';
+      msg += "</div>";
+
   if (numCorrect >= 8) {
-    msg += ' - You have successfully passed the test. You are now certified in ' + typeTest + '. Where ' + typeTest + ' is the certification topic you have chosen for this assignment.';
+    msg += 'You have successfully passed the test. You are now certified in ' + typeTest + '. Where ' + typeTest + ' is the certification topic you have chosen for this assignment.';
   } else {
-    msg += ' - Unfortunately you did not pass the test. Please try again later!';
-    msg += '<br><br><button onclick=\'location.href="index.html"\'>Try again</button>';
+    msg += 'Unfortunately you did not pass the test. <br><br> Please try again later!';
+    msg += '<br><button onclick=\'location.href="index.html"\'>Try again</button>';
   }
+
   resultsContainer.innerHTML = msg;
 }
 

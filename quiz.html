@@ -19,11 +19,17 @@
     </head>
     <body>
         <h1 class='display-3' id='quiz-title'></h1>
-        
+
         <div id='quiz-body'>
+
+            <div class="progress" style="width:50%; margin:0% 25%;">
+                <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">10%</div>
+            </div>
+
             <div class="quiz-container">
                 <div id="quiz"></div>
             </div>
+            <br>
             <button id="previous">Previous</button>
             <button id="next">Next</button>
             <button id="submit">Submit Quiz</button>
