@@ -5,7 +5,6 @@ const progressBar = document.getElementById('progress-bar');
 
 let currentSlide = 0;
 
-
 function showSlide(n) {
 
     slides[currentSlide].classList.remove('active-slide');
